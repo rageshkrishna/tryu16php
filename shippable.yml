@@ -1,0 +1,11 @@
+language: php
+php:
+ - "7.0"
+ 
+build:
+  pre_ci_boot:
+    image_name: drydock/u16phpall
+    image_tag: v5.3.2
+    pull: false
+  ci:
+    - docker images | grep php
