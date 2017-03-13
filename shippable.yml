@@ -9,3 +9,5 @@ build:
     pull: false
   ci:
     - docker images | grep php
+    - docker pull drydock/u16phpall:v5.3.2
+    - docker images | grep php
